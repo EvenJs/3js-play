@@ -1,18 +1,10 @@
-import { Canvas } from "@react-three/fiber";
+import React from "react";
 
 const App = () => {
   return (
-    <Canvas
-      style={{
-        height: "100vh",
-        width: "100vw",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      123
-    </Canvas>
+    <main className="max-w-7xl mx-auto">
+      <h1 className="text-2xl text-white underline">hello</h1>
+    </main>
   );
 };
 
