@@ -11,7 +11,7 @@ export const Navbar = () => {
   const NavItems = () => {
     return (
       <ul className="nav-ul">
-        {navLinks.map(({ id, href, name }) => (
+        {navLinks.map(({ id, name }) => (
           <li key={id} className="nav-li">
             <a className="nav-li_a" onClick={() => {}}>
               {name}
