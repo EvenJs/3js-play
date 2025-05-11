@@ -1,17 +1,15 @@
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
-// import { DirectionalLight, PerspectiveCamera } from "three";
 import { PerspectiveCamera } from "@react-three/drei";
 import HackerRoom from "../components/HackerRoom";
 import CanvasLoader from "../components/CanvasLoader";
-// import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../utils";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
 import Cube from "../components/Cube";
 import Rings from "../components/Ring";
-import HeroCamera from "../components/Herocamera";
+import HeroCamera from "../components/HeroCamera";
 import Button from "../components/Button";
 
 const Hero = () => {
