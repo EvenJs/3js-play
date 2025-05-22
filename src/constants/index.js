@@ -23,13 +23,13 @@ export const navLinks = [
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "Skateboard - 3d customize skateboard",
+    desc: "The 3D Skateboard website is an interactive tool that lets users customize a skateboard in real-time using 3D visuals. Built with modern web technologies, it allows for color changes, smooth animations, and an engaging user experience directly in the browser.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+      "Built as an immersive 3D customization experience with Next.js 15, Tailwind CSS, TypeScript, Three.js, GSAP and Prismic, this skateboard configurator showcases real-time design changes, smooth animations, and responsive performance—ideal for showcasing interactive product experiences.",
+    href: "https://3d-skateboard-theta.vercel.app/",
     texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1.png",
+    logo: "/assets/project-logo1.svg",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -54,17 +54,17 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Next.js",
+        path: "/assets/nextjs.png",
       },
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+    title: "Tubclone - YouTube Clone",
+    desc: "Tubclone is a high-performance video streaming platform inspired by YouTube. Built for scalability and smooth playback, it supports seamless video uploads, real-time comments, user subscriptions, and personalized recommendations—delivering a full-featured video-sharing experience with modern web technologies.",
     subdesc:
       "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+    href: "https://tube-clone-seven.vercel.app/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
     logoStyle: {
@@ -91,8 +91,8 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Next.js",
+        path: "/assets/nextjs.png",
       },
     ],
   },
@@ -173,11 +173,11 @@ export const myProjects = [
     ],
   },
   {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc: "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
+    title: "SPA portfolio",
+    desc: "A curated collection of modern, scalable web applications showcasing my expertise in full-stack development. This portfolio highlights real-world projects built with technologies such as Next.js, TypeScript, Tailwind CSS, React, Node.js, and Three.js. Each project demonstrates a focus on performance, responsive design, interactive UI/UX, and clean, maintainable code.",
     subdesc:
       "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-    href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
+    href: "https://spa-protfoio.vercel.app/",
     texture: "/textures/project/project5.mp4",
     logo: "/assets/project-logo5.png",
     logoStyle: {
