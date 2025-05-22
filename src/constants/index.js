@@ -214,32 +214,32 @@ export const myProjects = [
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Flywire",
+    pos: "Software Engineer",
+    duration: "2023 - 2025",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+      "As a Software Engineer at Flywire, I build and maintain scalable web applications that connect international students with global education opportunities. I collaborate closely with product and design teams to develop user-centric features, optimize performance, and ensure a seamless digital experience for students and institutions worldwide.",
+    icon: "/assets/flywire.png",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
+    name: "Jobpin",
+    pos: "Full-stack Developer",
+    duration: "2021 - 2022",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+      "At JobPin, I contribute to building a streamlined platform that connects job seekers with local employment opportunities in Australia. I focus on developing responsive and accessible features, improving backend integrations, and ensuring a smooth user experience for both job seekers and employers.",
+    icon: "/assets/jobpin.webp",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "Chinese News Group",
+    pos: "Web Developer Intern",
+    duration: "2020 - 2021",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+      "Worked on the development and maintenance of the company's online news platform. Responsibilities included building responsive user interfaces, assisting with backend content integration, and optimizing site performance to improve user experience for a wide Chinese-speaking audience.",
+    icon: "/assets/news.png",
     animation: "salute",
   },
 ];
