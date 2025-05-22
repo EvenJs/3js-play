@@ -3,6 +3,9 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   const [isLoading, setIsLoading] = useState(false);
 
   const [form, setForm] = useState({
@@ -13,23 +16,14 @@ const Contact = () => {
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
+    console.log(1, formRef);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await emailjs.sendForm(
-        "service_ulld4jk",
-        "template_1itjdw7",
-        {
-          from_name: form.name,
-          to_name: "Johnson",
-          from_email: form.email,
-          message: form.message,
-        },
-        "G3Jg6A9b6TyJ_29Nq"
-      );
+      await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
       setIsLoading(false);
 
       alert("your message has been sent!");
