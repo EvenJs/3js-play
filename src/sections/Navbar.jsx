@@ -11,9 +11,9 @@ export const Navbar = () => {
   const NavItems = () => {
     return (
       <ul className="nav-ul">
-        {navLinks.map(({ id, name }) => (
+        {navLinks.map(({ id, name, href }) => (
           <li key={id} className="nav-li">
-            <a className="nav-li_a" onClick={() => {}}>
+            <a className="nav-li_a cursor-pointer" href={href}>
               {name}
             </a>
           </li>

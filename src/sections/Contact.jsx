@@ -15,7 +15,6 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  // service_ulld4jk
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -47,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <section>
+    <section id="contact">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img
           src="/assets/terminal.png"

@@ -32,7 +32,7 @@ const Developer = ({ animationName = "idle", ...props }) => {
   );
   useEffect(() => {
     actions[animationName].reset().fadeIn(0.5).play();
-  }, [animationName]);
+  }, [actions, animationName]);
 
   return (
     <group {...props} dispose={null} ref={group}>
