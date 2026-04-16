@@ -5,9 +5,8 @@ import gsap from "gsap";
 
 const Target = (props) => {
   const targetRef = useRef();
-  const { scene } = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf"
-  );
+  const { scene } = useGLTF("/models/target-stand.gltf");
+
   useGSAP(() => {
     gsap.to(targetRef.current.position, {
       y: targetRef.current.position.y + 0.5,
@@ -17,6 +16,12 @@ const Target = (props) => {
     });
   });
 
+  scene.traverse((child) => {
+    if (child.isMesh) {
+      child.material.color.set("red");
+    }
+  });
+
   return (
     <mesh {...props} ref={targetRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
       <primitive object={scene} />
@@ -24,4 +29,5 @@ const Target = (props) => {
   );
 };
 
+useGLTF.preload("/models/target-stand.gltf");
 export default Target;

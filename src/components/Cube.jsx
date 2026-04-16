@@ -5,27 +5,26 @@ import { Float, useGLTF, useTexture } from "@react-three/drei";
 
 const Cube = ({ ...props }) => {
   const { nodes } = useGLTF("models/cube.glb");
-
   const texture = useTexture("textures/cube.png");
-
   const cubeRef = useRef();
   const [hovered, setHovered] = useState(false);
 
-  useGSAP(() => {
-    gsap
-      .timeline({
-        repeat: -1,
-        repeatDelay: 0.5,
-      })
-      .to(cubeRef.current.rotation, {
-        y: hovered ? "+=2" : `+=${Math.PI * 2}`,
-        x: hovered ? "+=2" : `-=${Math.PI * 2}`,
-        duration: 2.5,
-        stagger: {
-          each: 0.15,
-        },
-      });
-  });
+  useGSAP(
+    () => {
+      gsap
+        .timeline({
+          repeat: -1,
+          repeatDelay: 0.5,
+        })
+        .to(cubeRef.current.rotation, {
+          y: hovered ? "+=2" : `+=${Math.PI * 2}`,
+          x: hovered ? "+=2" : `-=${Math.PI * 2}`,
+          duration: 2.5,
+          stagger: { each: 0.15 },
+        });
+    },
+    { dependencies: [hovered] },
+  ); // ✅ re-run when hovered changes
 
   return (
     <Float floatIntensity={2}>
@@ -43,6 +42,7 @@ const Cube = ({ ...props }) => {
           geometry={nodes.Cube.geometry}
           material={nodes.Cube.material}
           onPointerEnter={() => setHovered(true)}
+          onPointerLeave={() => setHovered(false)} // ✅ reset on mouse out
         >
           <meshMatcapMaterial matcap={texture} toneMapped={false} />
         </mesh>

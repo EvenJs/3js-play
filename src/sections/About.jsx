@@ -26,9 +26,9 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Hi, I'm Yuhang</p>
+              <p className="grid-headtext">Hi, I'm Johnson </p>
               <p className="grid-subtext">
-                with 4 years of experience, I have honed my skills in Full stack
+                with 3 years of experience, I have honed my skills in Full stack
                 development.
               </p>
             </div>
