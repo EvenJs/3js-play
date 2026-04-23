@@ -28,8 +28,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I'm Johnson </p>
               <p className="grid-subtext">
-                with 3 years of experience, I have honed my skills in Full stack
-                development.
+                with 3+ years of experience, I have honed my skills in
+                full-stack development across .NET, React, Python, and AI
+                engineering.
               </p>
             </div>
           </div>
@@ -45,8 +46,9 @@ const About = () => {
             />
             <p className="grid-headtext">Tech stack</p>
             <p className="grid-subtext">
-              I specialize in JavaScript/TypeScript with a focus on React and
-              Next.js ecosystems.
+              I specialise in TypeScript and C#/.NET on the backend, React and
+              Next.js on the frontend, Python for AI/ML pipelines, and AWS for
+              cloud infrastructure.
             </p>
           </div>
         </div>
@@ -69,7 +71,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">work remotely</p>
               <p className="grid-subtext">
-                I'm based in Melbourne, with remote work available.
+                I'm based in Melbourne, with remote or on-site work available.
               </p>
               <Button
                 name="Contact Me"
@@ -92,8 +94,10 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Coding
-                isn't just my profession - it is my passion.
+                I love solving complex problems and building production-grade
+                software — from scalable APIs and LLM-powered applications to
+                responsive user interfaces. Coding isn't just my profession — it
+                is my passion.
               </p>
             </div>
           </div>
